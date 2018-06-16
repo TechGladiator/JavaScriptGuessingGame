@@ -4,6 +4,8 @@ const number = Math.floor(Math.random() * 100) + 1;
 // user gets 5 guesses
 let guesses = 5;
 
+console.log('if\r\nthis\r\nworked\r\nthis\r\nshould\r\nappear\r\non\r\nseperate\r\nlines');
+
 // let user know if they guessed correctly
 
 // if (guess is equal to number) {
