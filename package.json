@@ -10,11 +10,22 @@
     "type": "git",
     "url": "git+https://github.com/TechGladiator/JavaScriptGuessingGame.git"
   },
-  "keywords": ["JavaScript", "CLI", "game", "games", "guess" , "guessing", "guessing game"],
+  "keywords": [
+    "JavaScript",
+    "CLI",
+    "game",
+    "games",
+    "guess",
+    "guessing",
+    "guessing game"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/TechGladiator/JavaScriptGuessingGame/issues"
   },
-  "homepage": "https://github.com/TechGladiator/JavaScriptGuessingGame#readme"
+  "homepage": "https://github.com/TechGladiator/JavaScriptGuessingGame#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
