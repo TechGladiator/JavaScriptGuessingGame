@@ -4,7 +4,7 @@ console.log('\033c');
 const readline = require('readline-sync');
 
 // accept and read user input
-let guess = readline.question('what is your name? ');
+let userName = readline.question('what is your name? ');
 
 // picks a random number between 1 and 100
 const number = Math.floor(Math.random() * 100) + 1;
@@ -13,7 +13,7 @@ const number = Math.floor(Math.random() * 100) + 1;
 let tries = 5;
 
 // welcome and game start message
-console.log(`Welcome to the game!
+console.log(`Welcome to the game, ${userName}!
 
 Please enter a number between 1 and 100.
 
@@ -21,6 +21,21 @@ You Have ${tries} tries remaining.
 `);
 
 while (tries > 0) {
+
+  // accept user guess
+  let guess = readline.question(`
+`);
+
+  // make sure input is a number and within range
+  if (isNaN(guess) || guess < 1 || guess > 100) {
+    while (isNaN(guess) || guess < 1 || guess > 100) {
+      guess = readline.question(`
+Your answer must be a number between 1 and 100: `);
+    }
+  }
+
+  // remove a try
+  tries -= 1;
   
   // let user know if they guessed correctly
   
