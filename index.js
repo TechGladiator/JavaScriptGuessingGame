@@ -4,7 +4,7 @@ const number = Math.floor(Math.random() * 100) + 1;
 // user gets 5 guesses
 let guesses = 5;
 
-console.log('if\r\nthis\r\nworked\r\nthis\r\nshould\r\nappear\r\non\r\nseperate\r\nlines');
+console.log('Welcome to the game!\r\n\r\nPlease enter a number between 1 and 100\r\n');
 
 // let user know if they guessed correctly
 
