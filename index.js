@@ -5,9 +5,6 @@ const readline = require('readline-sync');
 
 // accept and read user input
 let guess = readline.question('what is your name? ');
-console.log(`
-Hi ${guess}!
-`);
 
 // picks a random number between 1 and 100
 const number = Math.floor(Math.random() * 100) + 1;
