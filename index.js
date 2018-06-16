@@ -4,7 +4,16 @@ const number = Math.floor(Math.random() * 100) + 1;
 // user gets 5 tries
 let tries = 5;
 
-console.log('Welcome to the game!\r\n\r\nPlease enter a number between 1 and 100\r\n');
+// clear the console
+console.log('\033c');
+
+// welcome and game start message
+console.log(`Welcome to the game!
+
+Please enter a number between 1 and 100.
+
+You Have ${tries} tries remaining.
+`);
 
 // let user know if they guessed correctly
 
