@@ -20,7 +20,10 @@ Please enter a number between 1 and 100.
 You Have ${tries} tries remaining.
 `);
 
-while (tries > 0) {
+// user hasen't won yet
+let won = false;
+
+while (tries > 0 && !won) {
 
   // accept user guess
   let guess = readline.question(`
@@ -38,57 +41,39 @@ Your answer must be a number between 1 and 100: `);
   tries -= 1;
   
   // let user know if they guessed correctly
-  
+
   // if (guess is equal to number) {
-    
+  if (guess == number) {
     // response = "You guessed correctly!"
-        
+    console.log('You guessed correctly!\r\n');
     // user wins the game
-    
-    // won = true
-    
+    console.log(`${userName} has won the game! Congratulations!`);
+    won = true;
     // how many guesses it took
-    
-    // totalGuesses = guesses - tries
-    
-    // let user know if they guessed incorrectly
-    
-  // } else if (guess is less then number) {
-    
+    console.log(`It took ${5 - tries}!`);
+  } else if (guess < number) {
     // guess was too low
-    
-    // response = "Your guess was too low. Please try again."
-    
-    // how many guesses are left
-    
-    // response = "You have " + guesses - 1 + " tries left."
-    
-  // } else if (guess is greater then number) {
-    
+    guess = readline.question(`Your guess was too low. Please try again. You have ${tries} tries left.\r\n`);
+  } else {
     // guess was too high
-    
-    // response = "Your guess was too low. Please try again."
-    
-    // how many guesses are left
-    
-    // response = "You have " + guesses - 1 + " tries left."
-    
-    // if user is out of guesses
-    
-  // } else if (guesses is equal to 0) {
-    
-    // user loses the game
-    
-    // response = "You lost"
-    
-    // give the correct number
-    
-    // response = "The number was " + number + "."
-    
-    // let user try again or end
-    
-    // response = "Do you want to try again?"
-    
-  // }
-  
+    guess = readline.question(`Your guess was too high. Please try again. You have ${tries} tries left.\r\n`);
+  }
 }
+    
+// if user is out of guesses
+  
+// } else if (guesses is equal to 0) {
+  
+  // user loses the game
+  
+  // response = "You lost"
+  
+  // give the correct number
+  
+  // response = "The number was " + number + "."
+  
+  // let user try again or end
+  
+  // response = "Do you want to try again?"
+  
+// }
