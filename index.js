@@ -2,7 +2,7 @@
 const number = Math.floor(Math.random() * 100) + 1;
 
 // user gets 5 guesses
-// guesses = 5
+let guesses = 5;
 
 // let user know if they guessed correctly
 
