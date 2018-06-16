@@ -1,0 +1,20 @@
+{
+  "name": "javascriptguessinggame",
+  "version": "1.0.0",
+  "description": "A guessing game made with JavaScript for the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechGladiator/JavaScriptGuessingGame.git"
+  },
+  "keywords": ["JavaScript", "CLI", "game", "games", "guess" , "guessing", "guessing game"],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TechGladiator/JavaScriptGuessingGame/issues"
+  },
+  "homepage": "https://github.com/TechGladiator/JavaScriptGuessingGame#readme"
+}
