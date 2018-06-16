@@ -17,55 +17,61 @@ Please enter a number between 1 and 100.
 You Have ${tries} tries remaining.
 `);
 
-// let user know if they guessed correctly
-
-// if (guess is equal to number) {
-  // response = "You guessed correctly!"  
+while (tries > 0) {
   
-  // user wins the game
+  // let user know if they guessed correctly
   
-  // won = true
-
-  // how many guesses it took
-
-  // totalGuesses = guesses - tries
+  // if (guess is equal to number) {
+    
+    // response = "You guessed correctly!"
+    
+    
+    // user wins the game
+    
+    // won = true
+    
+    // how many guesses it took
+    
+    // totalGuesses = guesses - tries
+    
+    // let user know if they guessed incorrectly
+    
+  // } else if (guess is less then number) {
+    
+    // guess was too low
+    
+    // response = "Your guess was too low. Please try again."
+    
+    // how many guesses are left
+    
+    // response = "You have " + guesses - 1 + " tries left."
+    
+  // } else if (guess is greater then number) {
+    
+    // guess was too high
+    
+    // response = "Your guess was too low. Please try again."
+    
+    // how many guesses are left
+    
+    // response = "You have " + guesses - 1 + " tries left."
+    
+    // if user is out of guesses
+    
+  // } else if (guesses is equal to 0) {
+    
+    // user loses the game
+    
+    // response = "You lost"
+    
+    // give the correct number
+    
+    // response = "The number was " + number + "."
+    
+    // let user try again or end
+    
+    // response = "Do you want to try again?"
+    
+  // }
   
-  // let user know if they guessed incorrectly
-  
-// } else if (guess is less then number) {
-
-  // guess was too low
-  
-  // response = "Your guess was too low. Please try again."
-
-  // how many guesses are left
-
-  // response = "You have " + guesses - 1 + " tries left."
-
-// } else if (guess is greater then number) {
-
-  // guess was too high
-
-  // response = "Your guess was too low. Please try again."
-
-  // how many guesses are left
-
-  // response = "You have " + guesses - 1 + " tries left."
-
-  // if user is out of guesses
-
-// } else if (guesses is equal to 0) {
-
-  // user loses the game
-
-  // response = "You lost"
-  
-  // give the correct number
-
-  // response = "The number was " + number + "."
-  
-  // let user try again or end
-
-  // response = "Do you want to try again?"
-  
-// }
+}
