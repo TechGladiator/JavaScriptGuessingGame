@@ -1,8 +1,8 @@
 // picks a random number between 1 and 100
 const number = Math.floor(Math.random() * 100) + 1;
 
-// user gets 5 guesses
-let guesses = 5;
+// user gets 5 tries
+let tries = 5;
 
 console.log('Welcome to the game!\r\n\r\nPlease enter a number between 1 and 100\r\n');
 
