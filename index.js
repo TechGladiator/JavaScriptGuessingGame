@@ -1,13 +1,19 @@
+// clear the console
+console.log('\033c');
+
 const readline = require('readline-sync');
+
+// accept and read user input
+let guess = readline.question('what is your name? ');
+console.log(`
+Hi ${guess}!
+`);
 
 // picks a random number between 1 and 100
 const number = Math.floor(Math.random() * 100) + 1;
 
 // user gets 5 tries
 let tries = 5;
-
-// clear the console
-console.log('\033c');
 
 // welcome and game start message
 console.log(`Welcome to the game!
@@ -18,18 +24,13 @@ You Have ${tries} tries remaining.
 `);
 
 // while (tries > 0) {
-
-  // accept and read user input
-  let guess = readline.question('what is your name? ');
-  console.log(`Hi ${guess}!`);
   
   // let user know if they guessed correctly
   
   // if (guess is equal to number) {
     
     // response = "You guessed correctly!"
-    
-    
+        
     // user wins the game
     
     // won = true
