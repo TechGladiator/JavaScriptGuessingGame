@@ -20,7 +20,7 @@ Please enter a number between 1 and 100.
 You Have ${tries} tries remaining.
 `);
 
-// while (tries > 0) {
+while (tries > 0) {
   
   // let user know if they guessed correctly
   
@@ -76,4 +76,4 @@ You Have ${tries} tries remaining.
     
   // }
   
-// }
+}
