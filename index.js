@@ -17,7 +17,11 @@ Please enter a number between 1 and 100.
 You Have ${tries} tries remaining.
 `);
 
-while (tries > 0) {
+// while (tries > 0) {
+
+  // accept and read user input
+  let guess = readline.question('what is your name? ');
+  console.log(`Hi ${guess}!`);
   
   // let user know if they guessed correctly
   
@@ -74,4 +78,4 @@ while (tries > 0) {
     
   // }
   
-}
+// }
