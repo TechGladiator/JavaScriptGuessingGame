@@ -1,5 +1,5 @@
-// picks a random number
-// number = randomNumber
+// picks a random number between 1 and 100
+const number = Math.floor(Math.random() * 100) + 1;
 
 // user gets 5 guesses
 // guesses = 5
